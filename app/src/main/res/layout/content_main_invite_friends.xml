@@ -14,34 +14,11 @@
         <ImageView
             android:id="@+id/imageView"
             android:scaleType="centerCrop"
-            android:layout_width="300dp"
+            android:layout_width="320dp"
             android:layout_height="200dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/i5" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:scaleType="centerCrop"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/i6" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:scaleType="centerCrop"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/i7" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:scaleType="centerCrop"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/i8" />
     </LinearLayout>
 
 </HorizontalScrollView>
