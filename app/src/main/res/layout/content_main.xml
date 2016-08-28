@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,7 +21,172 @@
     tools:showIn="@layout/app_bar_main">
 
     <TextView
+        android:id="@+id/hello_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/black"
+         android:textStyle="bold"
+        android:text="Hi, Love." />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/hello_user"
+        android:layout_width="44dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/recent_searches"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Recent searches" />
+
+    <include
+        android:id="@+id/recent_searches_list"
+        layout="@layout/content_main_recent_searches"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/recent_searches_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/recently_viewed"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Recently Viewed" />
+
+    <include
+        android:id="@+id/recently_viewed_list"
+        layout="@layout/content_main_recently_viewed"/>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_below="@id/recently_viewed_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/just_for_the_weekend"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Just for the weekend" />
+
+    <include
+        android:id="@+id/just_for_the_weekend_list"
+        layout="@layout/content_main_just_for_the_weekend"/>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_below="@id/just_for_the_weekend_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/staff_favorites"
+        android:layout_below="@id/line4"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Staff favorites" />
+
+    <include
+        android:id="@+id/staff_favorites_list"
+        layout="@layout/content_main_staff_favorites"/>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_below="@id/staff_favorites_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/popular_destinations"
+        android:layout_below="@id/line5"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Popular destinations" />
+
+    <include
+        android:id="@+id/popular_destinations_list"
+        layout="@layout/content_main_popular_destinations"/>
+
+    <View
+        android:id="@+id/line6"
+        android:layout_below="@id/popular_destinations_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/guide_books"
+        android:layout_below="@id/line6"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Guidebooks" />
+
+    <include
+        android:id="@+id/guide_books_list"
+        layout="@layout/content_main_guide_books"/>
+
+    <View
+        android:id="@+id/line7"
+        android:layout_below="@id/guide_books_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/invite_friends"
+        android:layout_below="@id/line7"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Invite friends" />
+
+    <include
+        android:id="@+id/invite_friends_list"
+        layout="@layout/content_main_invite_friends"/>
+
+    <TextView
+        android:id="@+id/line8"
+        android:layout_below="@id/invite_friends_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:text="Earn travel credit"
+        />
+
+
 </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

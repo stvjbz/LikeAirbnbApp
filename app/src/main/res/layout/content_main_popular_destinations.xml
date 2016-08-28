@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    android:id="@+id/popular_destinations_list"
+    android:layout_below="@id/popular_destinations"
+    android:layout_marginTop="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/i1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:scaleType="centerCrop"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/i2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:scaleType="centerCrop"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/i3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:scaleType="centerCrop"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/i4" />
+    </LinearLayout>
+
+</HorizontalScrollView>
