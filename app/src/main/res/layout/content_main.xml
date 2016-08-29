@@ -27,7 +27,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="@android:color/black"
         android:textStyle="bold"
-        android:text="Hi, Love." />
+        android:text="Hi, Stvjbz." />
 
     <View
         android:id="@+id/line1"
