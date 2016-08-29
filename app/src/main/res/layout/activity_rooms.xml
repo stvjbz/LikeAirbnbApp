@@ -19,12 +19,47 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <ImageView
-                android:id="@+id/topImage"
-                android:scaleType="centerCrop"
+
+            <RelativeLayout
+                android:id="@+id/imageViewLayout"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:src="@drawable/i1" />
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/topImage"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/i1" />
+
+                <TextView
+                    android:text="    ¥35,467"
+                    android:textColor="@android:color/white"
+                    android:background="#CC292828"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="Loft inspiration-Ported'Orleans" />
+
+            <TextView
+                android:id="@+id/text_primary"
+                android:text="★★★★★☆"
+                android:textColor="@android:color/holo_orange_light"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:layout_width="wrap_content"
