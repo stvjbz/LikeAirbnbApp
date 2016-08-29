@@ -19,9 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DestinationActivity"
-            android:label="@string/title_activity_destination"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".DestinationActivity" />
         <activity
             android:name=".RoomsActivity" />
     </application>

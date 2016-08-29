@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/imageViewLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/i1" />
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/imageViewWishList"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_recently_viewd_wish_list"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:padding="5dp"
+            android:text="    ¥35,467"
+            android:textColor="@android:color/white"
+            android:background="#CC292828"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/room_name"
+        android:paddingTop="10dp"
+        android:text="Loft inspiration-Port d'Orleans"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLayout"/>
+
+    <TextView
+        android:id="@+id/text_primary"
+        android:text="★★★★★☆"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/room_name" />
+
+    <TextView
+        android:id="@+id/text_secondary"
+        android:text="8・Entire place"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_primary"
+        android:layout_below="@id/room_name" />
+
+    <ImageView
+        android:id="@+id/owner_icon"
+        android:src="@drawable/ic_menu_user_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/room_name"
+        android:layout_below="@id/imageViewLayout"/>
+</RelativeLayout>
