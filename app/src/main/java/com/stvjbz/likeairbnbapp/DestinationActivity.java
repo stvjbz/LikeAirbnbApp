@@ -17,6 +17,7 @@ import android.widget.ImageView;
 public class DestinationActivity extends AppCompatActivity {
 
     private ImageView imageView = null;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +25,8 @@ public class DestinationActivity extends AppCompatActivity {
         supportRequestWindowFeature(WindowCompat.FEATURE_ACTION_BAR_OVERLAY);
         setContentView(R.layout.activity_destination);
 
-        ActionBar actionBar = getSupportActionBar();
+        actionBar = getSupportActionBar();
         if (actionBar != null) {
-
             actionBar.setHideOnContentScrollEnabled(true);
             actionBar.setShowHideAnimationEnabled(true);
             actionBar.setBackgroundDrawable(new ColorDrawable(Color.WHITE));
